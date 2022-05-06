@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcoral;
+    padding: 5px 150px;
+    
+}
+.main-title{
+    color: steelblue;
+    font-size: 35px;
+    font-family: 'Geneva';
+}
+.navbar a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}

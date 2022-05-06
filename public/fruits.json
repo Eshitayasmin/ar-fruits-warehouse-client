@@ -1,0 +1,99 @@
+[
+    {
+        "name": "Green Mango",
+        "description": "Green mangoes are one of the most juicy, thin-seeded, and largest type available.",
+        "price" : "55(per kg)",
+        "quantity": "40",
+        "supplierName": "Rakib Fruit Store",
+        "img": "https://noorzahan.com/wp-content/uploads/2020/05/Green-Mango.png"
+    },
+    {
+        "name": "Watermelon",
+        "description": "Watermelon weight varies from 1 to 2 kg to 20 kg or more.",
+        "price" : "35 (per kg)",
+        "quantity": "80",
+        "supplierName": "The Fruits Shop",
+        "img": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/whole-and-slices-watermelon.jpg"
+    },
+    {
+        "name": "Banana(sagor)",
+        "description": "Large size, fresh quality and taste is very good.",
+        "price" : "8 (per pcs)",
+        "quantity": "350",
+        "supplierName": "Fresh Fruits",
+        "img": "https://bazarghore.com/wp-content/uploads/2019/10/FP0004.jpg"
+    },
+    {
+        "name": "Pineapple",
+        "description": "Pineapple is a large oval fruit with sweet, juicy, yellow flesh and thick, brown skin.",
+        "price" : "45 (per pcs)",
+        "quantity": "120",
+        "supplierName": "Arha Fruits Corner",
+        "img": "https://static.libertyprim.com/files/familles/ananas-large.jpg?1569271716"
+    },
+    {
+        "name": "Green Apple",
+        "description": "Green apples crisp and juicy white flesh, which quality is very good. ",
+        "price" : "180 (per kg)",
+        "quantity": "30",
+        "supplierName": "Quality Fruits",
+        "img": "https://cdn.shopify.com/s/files/1/0433/5563/5870/products/istockphoto-1152428242-612x612_612x.jpg?v=1629050983"
+    },
+    {
+        "name": "Malta",
+        "description": "Safely imported, fresh quality and good to eat.",
+        "price" : "140(per kg)",
+        "quantity": "85",
+        "supplierName": "BD Fruits",
+        "img": "https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/86abc40f3e83-15902.png"
+    },
+    {
+        "name": "Green Grapes",
+        "description": "Green seedless grapes are small to medium in size.",
+        "price" : "220 (per kg)",
+        "quantity": "20",
+        "supplierName": "AR Fruits Ltd.",
+        "img": "https://momobud.sg/wp-content/uploads/2015/03/Thompson-Green-Seedless-Grapes.png"
+    },
+    {
+        "name": "Pomegranate",
+        "description": "Medium to large size and fresh quality",
+        "price" : "265 (per kg)",
+        "quantity": "290",
+        "supplierName": "The Fruits Shop",
+        "img": "https://livekarts.in/wp-content/uploads/2021/05/pomegranate-grenade-large.jpg"
+    },
+    {
+        "name": "Dragon Fruit",
+        "description": "Imported from Vietnam, Large size and fresh quality.",
+        "price" : "480 (per kg)",
+        "quantity": "37",
+        "supplierName": "Fruit Store",
+        "img": "https://www.agricoseed.com/exports/wp-content/uploads/2020/07/38126-0w470h470_Red_Dragon_Fruit.jpg"
+    },
+    {
+        "name": "Avocado",
+        "description": "Imported from Mexico and very good quality.",
+        "price" : "1120 (per kg)",
+        "quantity": "225",
+        "supplierName": "Fruit BD",
+        "img": "https://www.plantgrower.org/uploads/6/5/5/4/65545169/avocado_orig.jpg"
+    },
+    {
+        "name": "Pear Fruit",
+        "description": "Generally sweeter and of softer texture. ",
+        "price" : "170 (per kg)",
+        "quantity": "26",
+        "supplierName": "Easy Import Internatinal",
+        "img": "https://static.libertyprim.com/files/familles/poire-large.jpg?1569271830"
+    },
+    {
+        "name": "Kiwi Fruit",
+        "description": "Best quality and taste is very good. Imported from New Zealand.",
+        "price" : "980 (per kg)",
+        "quantity": "130",
+        "supplierName": "AR Import Food",
+        "img": "https://www.collinsdictionary.com/images/full/kiwifruit_245014345.jpg"
+    }
+   
+]

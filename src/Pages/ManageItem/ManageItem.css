@@ -1,0 +1,31 @@
+.manage-item{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 500px;
+    position: relative;
+}
+.manage-image{
+    width: 250px;
+    height: 250px;
+}
+
+.delete-btn{
+    background-color: rgba(255, 0, 0, 0.818);
+    color: white;
+    padding: 8px 43px;
+    font-size: 19px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+.add-btn{
+    background-color: aqua;
+    padding: 8px 50px;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 25px;
+}

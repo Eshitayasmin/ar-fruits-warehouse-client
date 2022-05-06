@@ -1,0 +1,25 @@
+.item{
+   border: 1px solid gray;
+   padding: 20px;
+   width: 350px;
+   border-radius: 10px;
+}
+
+.item-image{
+    width: 250px;
+    height: 250px;
+}
+.taka-icon{
+    width: 23px;
+    font-weight: 900;
+}
+.update-btn{
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 20px;
+    font-weight: 600;
+
+    
+}

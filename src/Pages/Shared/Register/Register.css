@@ -1,0 +1,30 @@
+.register-form{
+    background-color: antiquewhite;
+    border-right: 25px solid magenta;
+    padding: 20px 0px;
+    margin: 50px 0px;
+    border-radius: 10px;
+    
+}
+.register-form .title{
+    font-family: 'Cambria';
+}
+.register-form input{
+    display: block;
+    width: 70%;
+    padding: 7px 20px;
+    margin: 12px auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.register-form .submit-btn{
+    background-color: mediumslateblue;
+    color: white;
+    border: none;
+    padding: 6px;
+    font-size: 18px;
+    
+}
+.line{
+ margin-bottom: 5px;
+}

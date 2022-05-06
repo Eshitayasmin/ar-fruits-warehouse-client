@@ -1,0 +1,14 @@
+
+.backround-image {
+    background-image: url('https://cdn.wallpapersafari.com/99/80/IpEkdW.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backround-title{
+    color: maroon;
+    padding-bottom: 200px;
+}

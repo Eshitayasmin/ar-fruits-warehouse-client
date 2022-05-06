@@ -1,0 +1,80 @@
+import React from 'react';
+import { useForm } from "react-hook-form";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
+import './AddItem.css';
+import auth from '../../firebase.init';
+import axios from 'axios';
+import useFruitDetail from '../../hooks/useFruitDetail';
+import { useParams } from 'react-router-dom';
+
+const AddItem = () => {
+    const { register, handleSubmit } = useForm();
+    const [user] = useAuthState(auth);
+    // const {id} = useParams();
+    // const [fruitDetail] = useFruitDetail(id);
+    // 
+
+    // const handleAdd = event =>{
+    //     const handlePlaceOrder = event =>{
+    //         event.preventDefault();
+    //         const order = {
+    //             email:user.email,
+    //             name: fruitDetail.name,
+    //             fruitId: id,
+    //             address: event.target.address.value,
+    //             phone: event.target.phone.value
+    //         }
+    //         axios.post('https://tranquil-journey-40525.herokuapp.com/order', order)
+    //         .then(response =>{
+    //             const {data} = response;
+    //             if(data.insertedId){
+    //                 toast('You Ordered Successfully');
+    //                 event.target.reset();
+    //             }
+    //         })
+    //     }
+    // }
+
+
+    const onSubmit = data => {
+        console.log(data);
+        const url = `http://localhost:5000/inventory`;
+       
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+                toast('This item is added');
+               
+            });
+       
+            
+    };
+    return (
+        <div>
+
+             <h4 className='add-title'>Please Add A Item</h4>
+            <div className='w-50 mx-auto add-section'>
+                <form className='d-flex flex-column add-form' onSubmit={handleSubmit(onSubmit)}>
+                    <input className='mb-3 p-1' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+                    <input className='mb-3 p-1' placeholder='Supplier Name' {...register("supplierName")} />
+                    <input className='mb-3 p-1' placeholder='Price' {...register("price")} />
+                    <input className='mb-3 p-1' placeholder='quantity' type="number" {...register("quantity")} />
+                    <input className='mb-3 p-1' placeholder='Photo Url' {...register("img")} />
+                    <input className='mb-3 p-1' value={user.email} {...register("email")} readOnly/>
+                    <input className='add-item-btn' type="submit" value="Add Item" />
+                </form>
+            </div> 
+        </div>
+    );
+};
+
+export default AddItem;

@@ -1,0 +1,29 @@
+.add-section{
+   background-color: rgba(255, 228, 196, 0.807);
+   padding: 20px;
+   border-radius: 10px;
+   border-right: 22px solid lightgreen;
+    
+}
+.add-section input{
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.add-title{
+    font-family: 'Teko';
+    font-size: 35px;
+    text-align: center;
+    margin-top: 25px;
+    color: blue;
+
+}
+
+.add-item-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.819);
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+
+}
