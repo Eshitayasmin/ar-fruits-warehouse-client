@@ -1,0 +1,22 @@
+.qna{
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 30px 100px;
+}
+.answer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .qna{
+        padding: 8px;
+        margin: 10px;
+    }
+    .answer{
+        display: block;
+        justify-content: space-around;
+        padding: 8px;
+    }
+  }

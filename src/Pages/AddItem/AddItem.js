@@ -4,38 +4,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import './AddItem.css';
 import auth from '../../firebase.init';
-import axios from 'axios';
-import useFruitDetail from '../../hooks/useFruitDetail';
-import { useParams } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 const AddItem = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
-    // const {id} = useParams();
-    // const [fruitDetail] = useFruitDetail(id);
-    // 
-
-    // const handleAdd = event =>{
-    //     const handlePlaceOrder = event =>{
-    //         event.preventDefault();
-    //         const order = {
-    //             email:user.email,
-    //             name: fruitDetail.name,
-    //             fruitId: id,
-    //             address: event.target.address.value,
-    //             phone: event.target.phone.value
-    //         }
-    //         axios.post('https://tranquil-journey-40525.herokuapp.com/order', order)
-    //         .then(response =>{
-    //             const {data} = response;
-    //             if(data.insertedId){
-    //                 toast('You Ordered Successfully');
-    //                 event.target.reset();
-    //             }
-    //         })
-    //     }
-    // }
-
+    const navigate = useNavigate();
 
     const onSubmit = data => {
         console.log(data);
@@ -53,6 +27,7 @@ const AddItem = () => {
             .then(result => {
                 console.log(result);
                 toast('This item is added');
+                reset();
                
             });
        

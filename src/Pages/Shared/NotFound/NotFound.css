@@ -1,0 +1,14 @@
+.not-found{
+    height: 100vh;
+    margin-top: 150px;
+}
+.not-found h1{
+  font-size: 80px;
+}
+.not-found h4{
+    font-size: 35px;
+}
+.not-found p{
+    font-size: 25px;
+    
+}

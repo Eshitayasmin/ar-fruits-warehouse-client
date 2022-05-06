@@ -1,0 +1,20 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.988);
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+   
+  
+}
+@media only screen and (max-width: 600px) {
+    .footer{
+        height: 40px;
+        font-size: 12px;
+        margin-top: 15px;
+        
+    }
+  }

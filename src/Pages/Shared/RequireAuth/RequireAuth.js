@@ -8,9 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
-    const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
+    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
     const location = useLocation();
-    if (loading) {
+
+    if (loading || sending) {
         return <Loading></Loading>
     }
 
