@@ -13,7 +13,7 @@ const MyItems = () => {
     useEffect(() =>{
         const getMyItem = async() =>{
             const email = user?.email;
-            const url = `http://localhost:5000/myitem?email=${email}`;
+            const url = `https://enigmatic-oasis-08950.herokuapp.com/myitem?email=${email}`;
             const {data} = await axios.get(url);
             setMyItems(data);
         }
@@ -24,7 +24,7 @@ const MyItems = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure to want to delete this item?');
         if(proceed){
-            const url = `http://localhost:5000/inventory/${id}`;
+            const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -9,11 +9,10 @@ import { useNavigate} from 'react-router-dom';
 const AddItem = () => {
     const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
-    const navigate = useNavigate();
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/inventory`;
+        const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory`;
        
 
         fetch(url, {
