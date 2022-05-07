@@ -4,3 +4,9 @@
     grid-gap: 100px;
     margin: 50px 90px
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
