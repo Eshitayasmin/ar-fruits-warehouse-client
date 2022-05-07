@@ -36,7 +36,7 @@ const AddItem = () => {
         <div>
 
              <h4 className='add-title'>Please Add A Item</h4>
-            <div className='w-50 mx-auto add-section'>
+            <div className='mx-auto add-section'>
                 <form className='d-flex flex-column add-form' onSubmit={handleSubmit(onSubmit)}>
                     <input className='mb-3 p-1' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
                     <input className='mb-3 p-1' placeholder='Supplier Name' {...register("supplierName")} />

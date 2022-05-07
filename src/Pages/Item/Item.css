@@ -18,8 +18,44 @@
     color: black;
     border: none;
     border-radius: 7px;
-    padding: 8px 20px;
+    padding: 8px 25px;
     font-weight: 600;
-
     
+}
+.manage-btn{
+    background-color: magenta;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 25px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .item{
+        padding: 10px;
+        border-radius: 5px;
+        margin: 15px 5px;
+     }
+     
+     .item-image{
+         width: 190px;
+         height: 190px;
+     }
+     .taka-icon{
+         width: 18px;
+         font-weight: 700;
+     }
+     .update-btn{
+         border-radius: 7px;
+         padding: 7px 20px;
+         font-weight: 600;    
+     }
+     .manage-btn{
+        border-radius: 7px;
+        padding: 8px 20px;
+        font-weight: 600;
+        margin-left: 8px;
+    }
 }

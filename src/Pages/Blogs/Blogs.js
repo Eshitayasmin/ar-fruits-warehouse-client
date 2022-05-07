@@ -55,6 +55,12 @@ const Blogs = () => {
                 </div>
                 </div>
             </div>
+            <div className='qna'>
+                <h3 className='text-primary text-center'> What is the purpose of jwt and how does it work?</h3>
+                <div className='answer'>
+                   <p>JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.  JWT are mainly used for authentication. JWT is a token based stateless authentication mechanism. After a user logs in to an application, the application will create a JWT token and send it back to the user. A token automatically stores this value in the iat property. Every time you check the token, you can compare its iat value with the server-side user property.</p>
+                </div>
+            </div>
         </div>
     );
 };

@@ -37,8 +37,6 @@ const MyItems = () => {
         }
     }
         return (
-        <div>
-            <h1 className='text-success text-center mb-3'>My Items: {myItems.length}</h1>
             <div className="my-items">
             {
                 myItems.map(myItem =><MyItem 
@@ -47,7 +45,7 @@ const MyItems = () => {
                     handleDelete={handleDelete}></MyItem>)
             }
             </div>
-        </div>
+        
     );
 };
 

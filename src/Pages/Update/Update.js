@@ -18,10 +18,7 @@ const Update = () => {
   
 
   
-    if(fruitDetail.quantity === 0){
-        setSold('sold out');
-    }
- 
+    
     const handleDelivered = () => {
        if(fruitDetail.quantity > 0){
         fruitDetail.quantity = fruitDetail.quantity - 1;
@@ -30,8 +27,15 @@ const Update = () => {
         
        }
 
+       if(fruitDetail.quantity === 0){
+        setSold('sold out');
+    }
+
        
     }
+
+    
+ 
    
 
     const handleRestock = () =>{
@@ -43,28 +47,26 @@ const Update = () => {
      
 
 
-    const onSubmit = data => {
-        // console.log(data);
-        const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`;
+    // const onSubmit = data => {
+    //     // console.log(data);
+    //     const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`;
        
 
-        fetch(url, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                console.log(result);
-                toast('This item is updated');
-                reset();
+    //     fetch(url, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(data)
+    //     })
+    //         .then(res => res.json())
+    //         .then(result => {
+    //             console.log(result);
                
-            });
+    //         });
        
             
-    };
+    // };
 
 
 
@@ -82,16 +84,15 @@ const Update = () => {
                     <h6>Quantity: {fruitDetail.quantity}</h6>
                      <p className='text-danger p-0 sold'>{sold}</p>
                     <button onClick={handleDelivered} className='mt-3 my-2 delivery-btn'>Delivered</button>
-                   {/* <div>
+                   <div>
                    <input id="restock-field" className='me-3 mb-2' type="number" placeholder='Restock quantity'/>
-                    <button onClick={handleRestock} className='restock-btn'>Restock</button>
-                   </div> */}
+                    <button type='submit' onClick={handleRestock} className='restock-btn'>Restock</button>
+                   </div>
 
-                    <form onSubmit={handleSubmit(onSubmit)}>
-                    
+                    {/* <form onSubmit={handleSubmit(onSubmit)}>
                     <input id="restock-field" className='me-3 mb-2' placeholder='Restock quantity' type="number" {...register("quantity")} />
                     <input onClick={handleRestock} className='restock-btn' type="submit" value="Restock" />
-                </form>
+                </form> */}
                 </div>
                 
             </div>

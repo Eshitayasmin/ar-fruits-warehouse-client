@@ -14,7 +14,18 @@
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+  .not-found{
+    height: 100vh;
+    margin-top: 40px;
+}
+.not-found h1{
+  font-size: 60px;
+}
+.not-found h4{
+    font-size: 25px;
+}
+.not-found p{
+    font-size: 19px;
+    
+}
   }

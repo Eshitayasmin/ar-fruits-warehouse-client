@@ -1,8 +1,10 @@
 .add-section{
+  width: 50vw;
    background-color: rgba(255, 228, 196, 0.807);
    padding: 20px;
    border-radius: 10px;
    border-right: 22px solid lightgreen;
+   margin-bottom: 150px;
   
     
 }
@@ -20,8 +22,19 @@
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+  .add-section{
+    width: 80vw;
+    padding: 15px;
+    border-radius: 5px;
+    border-right: 15px solid lightgreen;
+    margin-bottom: 80px;  
+     
+ }
+ .add-title{
+  font-size: 25px;
+  margin-top: 18px;
+
+
+}
   }
 

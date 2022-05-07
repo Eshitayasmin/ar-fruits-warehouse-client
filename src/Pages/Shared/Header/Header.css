@@ -17,3 +17,18 @@
     color: black;
     font-size: 17px;
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        padding: 5px;
+        
+    }
+    .main-title{
+        font-size: 18px;
+      
+    }
+    .navbar a {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+  }

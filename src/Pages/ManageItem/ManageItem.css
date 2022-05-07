@@ -2,8 +2,7 @@
     border: 1px solid gray;
     border-radius: 5px;
     height: 470px;
-   
-    
+      
 }
 .manage-image{
     width: 250px;
@@ -31,3 +30,30 @@
     font-size: 18px;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .manage-item{
+        height: 470px;
+        margin: 15px 10px;
+          
+    }
+    .manage-image{
+        width: 210px;
+        height: 210px;
+    }
+    
+    .delete-btn{
+        padding: 6px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-right: 10px;
+       
+        
+        
+    }
+    .add-item-btn{
+        padding: 6px 25px;
+        font-size: 16px;
+    
+    }
+  }
