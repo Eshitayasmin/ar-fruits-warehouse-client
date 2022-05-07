@@ -11,7 +11,7 @@ import './Update.css';
 const Update = () => {
     const { id } = useParams();
     const [fruitDetail] = useFruitDetail(id);
-    const [quantity, setQuantity] = useState(true);
+    const [quantity, setQuantity] = useState('');
     const [sold, setSold] = useState('');
     const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
@@ -42,32 +42,32 @@ const Update = () => {
        const restockQuantity = document.getElementById('restock-field').value;
        fruitDetail.quantity = parseInt(fruitDetail.quantity) + parseInt(restockQuantity);
        setQuantity(fruitDetail.quantity);
+
+        // console.log(data);
+        const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`;
+       
+
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(quantity)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+               
+            });
+       
+        
+
        document.getElementById('restock-field').value = "";
     }
      
 
 
-    // const onSubmit = data => {
-    //     // console.log(data);
-    //     const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`;
-       
-
-    //     fetch(url, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(data)
-    //     })
-    //         .then(res => res.json())
-    //         .then(result => {
-    //             console.log(result);
-               
-    //         });
-       
-            
-    // };
-
+   
 
 
     return (
@@ -92,7 +92,7 @@ const Update = () => {
                     {/* <form onSubmit={handleSubmit(onSubmit)}>
                     <input id="restock-field" className='me-3 mb-2' placeholder='Restock quantity' type="number" {...register("quantity")} />
                     <input onClick={handleRestock} className='restock-btn' type="submit" value="Restock" />
-                </form> */}
+                </form>  */}
                 </div>
                 
             </div>
