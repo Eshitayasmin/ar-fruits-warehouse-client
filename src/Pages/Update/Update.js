@@ -43,25 +43,6 @@ const Update = () => {
        fruitDetail.quantity = parseInt(fruitDetail.quantity) + parseInt(restockQuantity);
        setQuantity(fruitDetail.quantity);
 
-        // console.log(data);
-        const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`;
-       
-
-        fetch(url, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(quantity)
-        })
-            .then(res => res.json())
-            .then(result => {
-                console.log(result);
-               
-            });
-       
-        
-
        document.getElementById('restock-field').value = "";
     }
      

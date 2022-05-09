@@ -23,8 +23,10 @@ const Item = ({fruit}) => {
             <h6>Price: <img className='taka-icon' src={taka} alt="" /> <span className='mt-3 px-0'>{price}</span></h6>
             <p>Quantity: {quantity}</p>
             <p><small>Supplier: {supplierName}</small></p>
+            <div className='d-flex'>
             <button onClick={() => navigateUpdate(_id)} className=' update-btn'>Update</button>
             <button onClick={navigateManageInventory} className='manage-btn'>Manage Inventory</button>
+            </div>
           
         </div>
     );

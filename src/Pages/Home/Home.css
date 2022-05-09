@@ -3,15 +3,59 @@
     background-image: url('https://cdn.wallpapersafari.com/99/80/IpEkdW.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .backround-title{
-    color: maroon;
-    padding-bottom: 200px;
+    color: sandybrown;
+    margin-top: 150px;
+    
 }
+.extra-one{
+    background-color: rgba(46, 139, 86, 0.789);
+    margin: 50px 130px;
+    padding: 60px 40px;
+    font-family: 'Teko';
+    border-radius: 15px;
+}
+.extra-one p{
+    word-spacing: 10px;
+    font-size: 24px;
+    padding: 10px 110px;
+    color: white;
+     
+}
+.extra-one h3{
+    font-size: 35px;
+    color: brown;
+    font-weight: 700;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-section img{
+    width: 30vw;
+}
+
+.contact-form .field{
+    display: block;
+    margin: 10px;
+    padding: 4px 10px;
+    width: 30vw;
+}
+.contact-submit-btn{
+    background-color: seagreen;
+    color: white;
+    padding: 6px 28px;
+    border: none;
+    border-radius: 5px;
+
+}
+
 
 @media only screen and (max-width: 600px) {
    

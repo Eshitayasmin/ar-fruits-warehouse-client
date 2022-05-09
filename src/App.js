@@ -14,6 +14,7 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Register from './Pages/Shared/Register/Register';
 import RequireAuth from './Pages/Shared/RequireAuth/RequireAuth';
 import Update from './Pages/Update/Update';
+import Welcome from './Pages/Welcome/Welcome';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
        <Route path="/register" element={<Register/>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/blogs" element={<Blogs/>}></Route>
+       <Route path="/welcome" element={<Welcome/>}></Route>
        <Route path="*" element={<NotFound/>}></Route>
      </Routes>
      <Footer></Footer>
