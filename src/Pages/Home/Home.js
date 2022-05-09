@@ -29,7 +29,7 @@ const Home = () => {
                 </div>
                 <div>
                 <h1 className='text-primary mt-3'>Contact Us</h1>
-                <p className='text-warning'>If you have any questions, please feel free to contact us</p>
+                <p className='text-warning ms-2'>If you have any questions, please feel free to contact us...</p>
                  <form className='contact-form' onSubmit={handleContactSubmit}>
                      <input className='field' type="text" placeholder='Name' required/>
                      <input className='field' type="email" name="email" placeholder='Email' required/>

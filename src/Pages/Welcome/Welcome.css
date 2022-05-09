@@ -1,5 +1,5 @@
 .welcome{
-    height: 100vh;
+    height: 90vh;
     text-align: center;
     margin-top: 150px;
 }
@@ -13,5 +13,14 @@
     font-weight: 600;
 }
 @media only screen and (max-width: 600px) {
-   
+    .welcome{
+        height: 80vh;
+        margin-top: 80px;
+    }
+    .welcome h4{
+        font-size: 22px;
+    }
+    .welcome p{
+        font-size: 18px;
+    }
 }

@@ -6,10 +6,14 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+
+
 }
 .backround-title{
     color: sandybrown;
     margin-top: 150px;
+   
+    
     
 }
 .extra-one{
@@ -24,6 +28,7 @@
     font-size: 24px;
     padding: 10px 110px;
     color: white;
+    text-align: justify;
      
 }
 .extra-one h3{
@@ -59,4 +64,62 @@
 
 @media only screen and (max-width: 600px) {
    
+.backround-image {
+    height: 70vh;
+}
+.backround-title{
+    margin-top: 100px;
+    color: brown;
+    
+}
+.extra-one{
+    margin: 20px 10px;
+    padding: 25px;
+    font-family: 'Teko';
+    border-radius: 10px;
+}
+.extra-one p{
+    word-spacing: 10px;
+    font-size: 24px;
+    padding: 5px;
+    color: white;
+    text-align: justify;
+     
+}
+.extra-one h3{
+    font-size: 27px;
+    color: brown;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-section{
+    display: block;
+    
+}
+.contact-section h1{
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+
+.contact-section img{
+    width: 80vw;
+    margin: 0 auto;
+}
+.contact-form{
+    margin-left: 10px;
+}
+
+.contact-form .field{
+    margin: 10px;
+    padding: 4px 10px;
+    width: 70vw;
+    border: 1px solid lightblue;
+
+}
+.contact-submit-btn{
+    padding: 5px 24px;
+
+}
   }
