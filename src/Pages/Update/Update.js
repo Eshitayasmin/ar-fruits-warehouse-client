@@ -26,7 +26,7 @@ const Update = () => {
             const quantity = fruitDetail.quantity;
             setNewQuantity(quantity);
 
-            fetch(`http://localhost:5000/inventory/${id}`, {
+            fetch(`https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const Update = () => {
         setNewQuantity(quantity);
 
 
-        fetch(`http://localhost:5000/inventory/${id}`, {
+        fetch(`https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

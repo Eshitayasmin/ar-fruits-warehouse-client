@@ -12,7 +12,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/inventory`;
+        const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory`;
        
 
         fetch(url, {

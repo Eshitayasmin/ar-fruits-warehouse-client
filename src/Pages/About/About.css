@@ -1,0 +1,32 @@
+.about-div{
+    margin: 40px 80px 250px;
+
+}
+.about{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 25px;
+   margin-top: 30px;
+}
+.part{
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: bisque;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-div{
+        margin: 30px 10px;
+    }
+    .about{
+       display: block;
+       width: 90vw;
+       margin-top: 20px;
+    }
+    .part{
+        border-radius: 8px;
+        padding: 10px;
+    }
+    
+  }

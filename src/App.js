@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
+import About from './Pages/About/About';
 import AddItem from './Pages/AddItem/AddItem';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
@@ -47,6 +48,7 @@ function App() {
        <Route path="/register" element={<Register/>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/blogs" element={<Blogs/>}></Route>
+       <Route path="/about" element={<About/>}></Route>
        <Route path="/welcome" element={<Welcome/>}></Route>
        <Route path="*" element={<NotFound/>}></Route>
      </Routes>
