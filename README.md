@@ -1,17 +1,21 @@
 # AR Fruits Warehouse
 
 ## Live site link
-### https://ar-photography-73631.firebaseapp.com/
+### https://ar-fruits-warehouse.web.app/
 
 <hr>
 
 ### What can be done in the Project :
 - Can be sign up.
 - Can be signout.
+- Can be add a new item.
+- Can be update a item.
+- Can be delete a item.
 - Once signed up you can login later.
 - Sent email verification.
 - If you forget the password, you can reset the password.
 - If you are not logged in, you will not be able to enter the private route.
+
 
 ### Technologies:
 - Firebase
@@ -19,6 +23,8 @@
 - React-router-dom
 - React Bootstrap
 - React-Toastify
+- axios
+- react-hook-form
 
 
 
