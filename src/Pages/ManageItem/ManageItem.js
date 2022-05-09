@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import taka from '../../images/taka.png';
 import './ManageItem.css';
+
 
 const ManageItem = ({ fruit, handleDelete }) => {
     const { _id, name, img, price, quantity, supplierName } = fruit;
@@ -15,7 +17,7 @@ const ManageItem = ({ fruit, handleDelete }) => {
             <div className='mx-3'>
                 <h4>{name}</h4>
                 <p>Supplier: {supplierName}</p>
-                <p>Price: {price}</p>
+                <p>Price: <img className='taka-icon' src={taka} alt="" /> <span className='mt-3 p-0'>{price}</span></p>
                 <p>Quantity: {quantity}</p>
             </div>
 

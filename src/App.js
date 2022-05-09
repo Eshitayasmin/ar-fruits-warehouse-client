@@ -39,7 +39,11 @@ function App() {
            <MyItems/>
          </RequireAuth>
        }></Route>
-       <Route path="/update/:id" element={<Update/>}></Route>
+       <Route path="/update/:id" element={
+         <RequireAuth>
+           <Update/>
+         </RequireAuth>
+       }></Route>
        <Route path="/register" element={<Register/>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/blogs" element={<Blogs/>}></Route>

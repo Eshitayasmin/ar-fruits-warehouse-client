@@ -13,9 +13,8 @@ const Home = () => {
 
     return (
         <div>
-            <div className='backround-image w-100'>
-                <div><h1 className='text-center backround-title'>Welcome to AR Fruits Warehouse</h1></div>
-                <p></p>
+            <div className='backround-image'>
+                <h1 className='text-center backround-title'>Welcome To AR Fruits Warehouse</h1>
             </div>
             
             <Items></Items>

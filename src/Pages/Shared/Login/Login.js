@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../Loading/Loading';
 import axios from 'axios';
+import useToken from '../../../hooks/useToken';
 
 
 const Login = () => {
@@ -21,10 +22,17 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [token] = useToken(user);
 
     const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(
         auth
     );
+
+    const from = location.state?.from?.pathname || '/';
+
+    if (token) {
+        navigate(from, { replace: true });
+    }
 
     if (loading || sending) {
         return <Loading></Loading>
@@ -50,11 +58,6 @@ const Login = () => {
     
     }
 
-    const from = location.state?.from?.pathname || '/';
-
-    if (user) {
-        // navigate(from, { replace: true });
-    }
 
     const resetPassword = async () => {
         if (email) {
@@ -73,7 +76,7 @@ const Login = () => {
        const {data} = await axios.post(' http://localhost:5000/login', {email});
        console.log(data);
        localStorage.setItem('accessToken', data.accessToken);
-       navigate(from, { replace: true });
+     
     }
 
     const navigateRegister = () => {

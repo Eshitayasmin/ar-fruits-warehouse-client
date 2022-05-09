@@ -6,6 +6,7 @@ import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { toast, ToastContainer } from 'react-toastify';
 import Loading from '../Loading/Loading';
+import useToken from '../../../hooks/useToken';
 
 
 const Register = () => {
@@ -16,8 +17,9 @@ const Register = () => {
         loading,
         error,
       ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification : true});
+      const [token] = useToken(user);
       
-      if(user){
+      if(token){
         navigate('/');
       }
 

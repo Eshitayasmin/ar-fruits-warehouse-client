@@ -3,15 +3,19 @@
     background-image: url('https://cdn.wallpapersafari.com/99/80/IpEkdW.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
+  
 
 
 }
 .backround-title{
-    color: sandybrown;
-    margin-top: 150px;
+    color: maroon;
+    margin-top: 200px;
+    font-family: 'Lato';
+    font-weight: 700;
+
    
     
     
