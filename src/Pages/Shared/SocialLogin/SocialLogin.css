@@ -31,3 +31,27 @@
 .logo{
     width: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+    .or-section{
+        padding: 0px 25px;
+     
+        
+    }
+    
+    .or{
+        font-size: 15px;
+     
+    }
+    .social-btn{
+        font-size: 12px;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 10px;
+        
+    }
+    .logo{
+        width: 18px;
+    }
+  }

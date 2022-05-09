@@ -35,9 +35,9 @@
 @media only screen and (max-width: 600px) {
     .item{
         padding: 10px;
-        width: 80vw;
+        width: 90vw;
         border-radius: 5px;
-        margin: 20px 10px;
+        margin: 25px 5px;
      }
      
      .item-image{

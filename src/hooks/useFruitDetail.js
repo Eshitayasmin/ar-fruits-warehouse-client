@@ -4,7 +4,7 @@ const useFruitDetail = id =>{
     const [fruitDetail, setFruitDetail] = useState({});
 
     useEffect(() =>{
-        fetch(`https://enigmatic-oasis-08950.herokuapp.com/inventory/${id}`)
+        fetch(`http://localhost:5000/inventory/${id}`)
         .then(res => res.json())
         .then(data => setFruitDetail(data));
     }, [id]);

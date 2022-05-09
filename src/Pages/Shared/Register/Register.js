@@ -52,7 +52,8 @@ const Register = () => {
          navigate('/login');
     }
     return (
-        <div className='register-form w-50 mx-auto'>
+      <div className='form-div'>
+        <div className='register-form mx-auto'>
             <h1 className='title text-primary text-center mt-3 mb-3'>Register</h1>
             <form onSubmit={handleRegister}>
             <input type="text" name="name" placeholder='Name' required />
@@ -70,6 +71,7 @@ const Register = () => {
 
             <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>
+        </div>
         </div>
     );
 };

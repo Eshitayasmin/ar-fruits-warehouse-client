@@ -23,8 +23,8 @@
 
 @media only screen and (max-width: 600px) {
   .add-section{
-    width: 80vw;
-    padding: 15px;
+    width: 90vw;
+    padding: 10px;
     border-radius: 5px;
     border-right: 15px solid lightgreen;
     margin-bottom: 80px;  

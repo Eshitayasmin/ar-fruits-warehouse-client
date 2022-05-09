@@ -1,7 +1,11 @@
+.form-div{
+    height: 100vh;
+}
 .register-form{
     background-color: antiquewhite;
     border-right: 25px solid magenta;
     padding: 20px 0px;
+    width: 50vw;
     margin: 50px 0px;
     border-radius: 10px;
     
@@ -29,8 +33,27 @@
  margin-bottom: 5px;
 }
 
+
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+    .register-form{
+        border-right: 15px solid magenta;
+        padding: 10px 5px;
+        border-radius: 10px;
+        width: 90vw;
+        
     }
+    
+    .register-form input{
+        display: block;
+        width: 80%;
+        padding: 5px 15px;
+        margin: 8px auto;
+        border-radius: 3px;
+    }
+    .register-form .submit-btn{
+        padding: 5px;
+        font-size: 16px;
+        
+    }
+    
   }

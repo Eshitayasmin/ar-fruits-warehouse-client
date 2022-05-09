@@ -12,7 +12,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `https://enigmatic-oasis-08950.herokuapp.com/inventory`;
+        const url = `http://localhost:5000/inventory`;
        
 
         fetch(url, {
@@ -33,8 +33,7 @@ const AddItem = () => {
             
     };
     return (
-        <div>
-
+        <div className='form-div'>
              <h4 className='add-title'>Please Add A Item</h4>
             <div className='mx-auto add-section'>
                 <form className='d-flex flex-column add-form' onSubmit={handleSubmit(onSubmit)}>
