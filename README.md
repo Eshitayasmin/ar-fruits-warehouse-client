@@ -7,7 +7,7 @@
 
 ### What can be done in the Project :
 - Can be sign up.
-- Can be signout.
+- Can be signOut.
 - Can be add a new item.
 - Can be update a item.
 - Can be delete a item.
@@ -23,8 +23,8 @@
 - React-router-dom
 - React Bootstrap
 - React-Toastify
-- axios
-- react-hook-form
+- Axios
+- React-hook-form
 
 
 
